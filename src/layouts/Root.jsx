@@ -1,9 +1,10 @@
 import { Outlet } from "react-router-dom";
+import Nav from "../shared/Nav";
 
 const Root = () => {
    return (
-      <div>
-         
+      <div className="">
+         <Nav />
          <Outlet />
 
       </div>
