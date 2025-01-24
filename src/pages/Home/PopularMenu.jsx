@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Title from "../../shared/Title";
 import MenuItem from "../../shared/MenuItem";
+import Button from "../../components/Button";
 
 const PopularMenu = () => {
    const [menu, setMenu] = useState([]);
@@ -22,6 +23,7 @@ const PopularMenu = () => {
                menu.map((item, i) => <MenuItem key={i} item={item} />)
             }
          </div>
+         <Button pathName='/menu'/>
       </div>
    );
 };
